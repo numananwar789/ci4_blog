@@ -25,18 +25,18 @@ class Database extends Config
      * The default database connection.
      */
 
-     public $default = [
+     public $default_test = [
         'DSN'      => DBDNS,
         'cacheOn'  => true,
         'DBDriver' => 'Postgre'
     ];
 
-    public array $default_test = [
+    public array $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
+        'username' => 'root',
         'password' => '',
-        'database' => '',
+        'database' => 'ci4_blog_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

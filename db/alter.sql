@@ -16,3 +16,6 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public."Users"
     OWNER to ci4_blog_user;
+
+ALTER TABLE IF EXISTS public."Users"
+    ADD COLUMN "CreatedAt" timestamp without time zone DEFAULT now();
